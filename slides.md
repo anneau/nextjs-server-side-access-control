@@ -41,11 +41,13 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-layout: image-right
-image: /images/profile.jpg
 ---
 
 # 小堀 輝（こぼり ひかる）
+
+<div class="grid grid-cols-2 gap-2">
+
+<div>
 
 - エイチームライフデザイン リードエンジニア
 - React, Next.js, TypeScript
@@ -53,6 +55,17 @@ image: /images/profile.jpg
 
 <div class="flex flex-row gap-2">
 <img src="/images/wasabi.jpg" class="h-150px" />
+</div>
+
+</div>
+
+
+<div>
+
+<img src="/images/profile.jpg" class="h-10\/12" />
+
+</div>
+
 </div>
 
 <style>
