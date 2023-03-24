@@ -228,7 +228,7 @@ class: text-center
 
 Next.jsのサーバーサイドでアクセスコントロールをしてしまうという手法
 
-```ts
+```ts {all|2-3|4-11}
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const cookies = nookies.get(context);
   const { session } = cookies;
@@ -290,7 +290,11 @@ Next.jsのMiddlewareを用いた手法
 
 Next.jsのMiddlewareでアクセスコントロールしてしまう手法
 
-```ts
+<div class="flex flex-row items-center gap-2">
+
+<div>
+
+```ts {all|2|4-6}
 export async function middleware(request: NextRequest, event: NextFetchEvent) {
   const session = request.cookies.get('session')?.value ?? '';
 
@@ -301,6 +305,14 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
   return NextResponse.next();
 }
 ```
+
+</div>
+
+<div>
+<img src="/images/middleware_dir.png" />
+</div>
+
+</div>
 
 ---
 ---
