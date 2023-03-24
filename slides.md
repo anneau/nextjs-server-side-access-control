@@ -232,7 +232,7 @@ Next.jsのサーバーサイドでアクセスコントロールをしてしま�
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const cookies = nookies.get(context);
   const { session } = cookies;
-  if (!isAuthenticated(session)) {
+  if (!(await isAuthenticated(session))) {
     return {
       redirect: {
         parament: false,
