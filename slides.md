@@ -45,11 +45,11 @@ layout: image-right
 image: /images/profile.jpg
 ---
 
-# 自己紹介
+# 小堀 輝（こぼり ひかる）
 
-- 💼 - エイチームライフデザイン リードエンジニア
-- 🧑‍💻 - React, Next.js, TypeScript
-- 🎨 - 🍷🐈🎮
+- エイチームライフデザイン リードエンジニア
+- React, Next.js, TypeScript
+- 🍷🐈🎮
 
 <div class="flex flex-row gap-2">
 <img src="/images/wasabi.jpg" class="h-150px" />
