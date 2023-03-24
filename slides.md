@@ -316,6 +316,9 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
 3. アクセスコントロールのコードが各ページにバラけてしまい、漏れが発生する可能性が上がる  
 → 🤗 Middlewareは全ページで共通に実行されるため、まとめてアクセスコントロールが可能
 
+---
+---
+
 # まとめ
 
 Next.jsでのアクセスコントロール手法
