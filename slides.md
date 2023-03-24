@@ -86,13 +86,16 @@ class: text-center
 # Next.jsにおけるアクセスコントロールの話
 
 ---
-layout: image-right
-image: /images/access_control.png
 ---
 
 # アクセスコントロールとは？
 
-### 以下のようなパターン
+以下のようなパターン
+
+
+<div class="flex flex-row gap-2">
+
+<div>
 
 - マイページへのアクセスはトークンの検証ができないとアクセスできないようにする
 <br />
@@ -104,6 +107,17 @@ image: /images/access_control.png
 <br />
 
 - ABテストでページを出し分ける
+</div>
+
+<div class="flex justify-center">
+
+<img src="/images/access_control.png" class="h-10\/12" />
+
+</div>
+
+</div>
+
+
 
 ---
 ---
@@ -268,13 +282,15 @@ class: text-center
 # 2. エッジサーバーサイドアクセスコントロール  
 
 ---
-layout: image-right
-image: /images/middleware_access_control.png
 ---
 
 # エッジサーバーサイドアクセスコントロール
 
 Next.jsのMiddlewareを用いた手法
+
+<div class="grid grid-cols-2">
+
+<div>
 
 - Next.js v12.2.0でstableになった機能
 - エッジサーバーで動くことが期待されている
@@ -282,6 +298,16 @@ Next.jsのMiddlewareを用いた手法
   - セルフホストの場合は、オリジンサーバー上で実行される
 - SSRでもSG（SSG）であっても実行可能
   - SGの場合はキャッシュされたコンテンツが変えるよりも前段で実行される
+
+</div>
+
+<div class="flex justify-center">
+
+<img src="/images/middleware_access_control.png" class="h-9\/12" />
+
+</div>
+
+</div>
 
 ---
 ---
